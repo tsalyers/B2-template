@@ -4,6 +4,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-  <display-name>B2</display-name>
+  <display-name>Hello World Plugin</display-name>
+  <servlet>
+    <description>Simple Hello World Example</description>
+    <display-name>Hello</display-name>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>edu.irsc.es.bb.servlets.HelloWorldController</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
 </web-app>
