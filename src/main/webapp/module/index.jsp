@@ -21,7 +21,7 @@
         <fmt:message key="hw.main.page.breadcrumb" var="plugin_breadcrumb"/>
         <fmt:message key="hw.main.page.header" var="page_title"/>
         <fmt:message key="hw.main.tabbed.panel" var="tabbed_panel"/>
-        <jsp:useBean id="HWM" class="edu.irsc.es.bb.beans.HelloWorldModel" scope="session"/>
+        <jsp:useBean id="HWM" class="uk.ac.sheffield.bb.beans.TemplateModel" scope="session"/>
 
 
         <bbNG:breadcrumbBar environment="SYS_ADMIN" navItem="admin_plugin_manage">
@@ -41,6 +41,6 @@
             </bbNG:tabbedPanel>
         </bbNG:tabbedPanels>
 
-        <h4>${HWM.getHello()}</h4>
+        <h4>${HWM.getText()}</h4>
     </bbNG:genericPage>
 </bbData:context>

@@ -5,7 +5,7 @@
     <plugin>
 
         <name value="b2.name"/>
-        <handle value="hello-world"/>
+        <handle value="template-app"/>
         <description value="b2.description"/>
         <default-locale value="en_US"/>
 
@@ -15,10 +15,10 @@
         </requires>
 
         <vendor>
-            <id value="irsc"/>
-            <name value="Indian River State College"/>
-            <url value="http://www.irsc.edu"/>
-            <description value="b2.vendor.description"/>
+            <id value="UOS"/>
+            <name value="University of Sheffield"/>
+            <url value="http://sheffield.ac.uk"/>
+            <description value="University of Sheffield"/>
         </vendor>
 
 
@@ -32,10 +32,10 @@
 
         <application-defs>
             <application
-                    handle="irsc-hello-app"
+                    handle="template-app"
                     type="system"
                     use-ssl="false"
-                    name="Hello World App"
+                    name="Template App"
                     can-allow-guest="false"
                     small-icon=""
                     large-icon="">
@@ -43,8 +43,8 @@
                 <links>
                     <link>
                         <type value="system_tool"/>
-                        <name value="Hello World Tool"/>
-                        <url value="hello"/>
+                        <name value="Template BB"/>
+                        <url value="template"/>
                         <description value="app1.description"/>
                     </link>
                 </links>
